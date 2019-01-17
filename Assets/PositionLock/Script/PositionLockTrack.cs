@@ -28,11 +28,10 @@ namespace UTJ
             return playable;
         }
 
-        /*
         public override void GatherProperties(PlayableDirector director, IPropertyCollector driver)
         {
 #if UNITY_EDITOR
-            Transform trackBinding = director.GetGenericBinding(this) as Transform;
+            GameObject trackBinding = director.GetGenericBinding(this) as GameObject;
             if (trackBinding != null)
             {
                 var serializedObject = new UnityEditor.SerializedObject(trackBinding);
@@ -42,13 +41,12 @@ namespace UTJ
                     if (iterator.hasVisibleChildren)
                         continue;
 
-                    driver.AddFromName<Transform>(trackBinding.gameObject, iterator.propertyPath);
+                    driver.AddFromName(trackBinding, iterator.propertyPath);
                 }
             }
 #endif
             base.GatherProperties(director, driver);
         }
-        */
 
     }
 }
