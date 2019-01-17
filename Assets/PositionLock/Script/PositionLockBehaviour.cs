@@ -15,12 +15,13 @@ namespace UTJ
 
         public override void ProcessFrame(Playable playable, FrameData info, object playerData)
         {
-            var originalTransform = playerData as Transform;
-            if (originalTransform != null && sourceTransform != null)
-            {
-                originalTransform.position = sourceTransform.position;
-                originalTransform.rotation = sourceTransform.rotation;
-            }
+            if(sourceTransform == null) { return; }
+            var originGmo = playerData as GameObject;
+            if( originGmo == null) { return; }
+            var originalTransform = originGmo.transform as Transform;
+
+            originalTransform.position = sourceTransform.position;
+            originalTransform.rotation = sourceTransform.rotation;
 
         }
     }
