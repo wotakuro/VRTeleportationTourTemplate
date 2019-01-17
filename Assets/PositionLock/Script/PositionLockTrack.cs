@@ -8,7 +8,7 @@ namespace UTJ
 {
     [TrackColor(0.875f, 0.5944853f, 0.1737132f)]
     [TrackClipType(typeof(PositionLockClip))]
-    [TrackBindingType(typeof(Transform))]
+    [TrackBindingType(typeof(GameObject))]
     public class PositionLockTrack : TrackAsset
     {
         public override void OnEnable()

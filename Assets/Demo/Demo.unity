@@ -306,14 +306,19 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 0}
     value: {fileID: 0}
-  - key: {fileID: 114408800439633430, guid: 62cebcced464afa44bb6b046698f3190, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 863894748}
   - key: {fileID: 0}
     value: {fileID: 0}
+  - key: {fileID: 114033744294137428, guid: 62cebcced464afa44bb6b046698f3190, type: 2}
+    value: {fileID: 1777376176}
   m_ExposedReferences:
     m_References:
+    - 48ed3f555e7a31b4c829dd6aaf744f48: {fileID: 977365695}
+    - af6455aef29b6b14482ee3f0820906a2: {fileID: 294982022}
     - 192281b988ff17342858d71075d424f6: {fileID: 2071576179}
     - 8f086d64d62308245a0792d911cd2e11: {fileID: 294982022}
+    - b3a8ee7dac080354ea161b5f0a893811: {fileID: 2071576179}
     - 870cc21d0960fc043a78ea13bc4f2dc3: {fileID: 977365695}
     - 74136e3aaf8ce4940a80d48c85939db6: {fileID: 2099711125}
 --- !u!114 &1231707591
@@ -330,6 +335,11 @@ MonoBehaviour:
 --- !u!1 &1349674226 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1625927954645364, guid: f062a309bbdbfe041a0bb6c86acc954f,
+    type: 2}
+  m_PrefabInternal: {fileID: 863894747}
+--- !u!1 &1777376176 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1693636180224632, guid: f062a309bbdbfe041a0bb6c86acc954f,
     type: 2}
   m_PrefabInternal: {fileID: 863894747}
 --- !u!1 &2071576179
